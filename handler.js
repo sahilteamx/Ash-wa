@@ -1,7 +1,7 @@
 // Config
 var config = {
-    botName: '🔹 𝙉 O T 🔹',
-    operator: ['6281515860089'],
+    botName : '🔹 𓆰◡̈⃝𝘼𝘀𝙝𓆪⁩' ,
+    operator: ['13068000149'],
     prefix: process.env.prefix ? new RegExp('^' + process.env.prefix) : /^[°•π÷×¶∆£¢€¥®™✓_=|~!?@#$%^&.\/\\©^]/,
     downloadStatus: false, // Curi Status Orang :|
     devMode: false, // true,
@@ -1248,12 +1248,12 @@ ${(config.iklan || []).map((iklan, i) => `${i + 1}. ${iklan}`).join('\n') || '_T
 • *Bot Author* •
 𝙉𝙪𝙧𝙪𝙩𝙤𝙢𝙤 (Nurutomo)
 https://github.com/Nurutomo/
-Repo: https://github.com/Nurutomo/nbot-wa
+Repo: https://chat.whatsapp.com/F9VNFC2TBNk8CdfO66eaD1
 ${readMore}wa.me/6281515860089
 `.slice(1, -1)
 }
 
-function processSticker(input) {
+function  processSticker ( input ) {
     return new Promise((resolve, reject) => {
         if (typeof input == 'string' && /^data/.test(input)) input = Buffer.from(input.replace(/^data:.+;base64,/, ''))
         sharp(input)
